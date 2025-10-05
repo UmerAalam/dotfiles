@@ -12,9 +12,9 @@ include current-theme.conf
 #: characters.
 
 # font_family      Mono Nerd NF
-# bold_font        auto
-# italic_font      auto
-# bold_italic_font auto
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
 
 #: You can specify different fonts for the bold/italic/bold-italic
 #: variants. The easiest way to select fonts is to run the `kitten
@@ -25,7 +25,7 @@ include current-theme.conf
 #: <https://sw.kovidgoyal.net/kitty/kittens/choose-fonts/#font-spec-
 #: syntax>.
 
-font_size 15
+font_size 13.5
 
 #: Font size (in pts).
 
@@ -339,7 +339,7 @@ font_size 15
 #: Stop blinking cursor after the specified number of seconds of
 #: keyboard inactivity. Set to zero to never stop blinking.
 
-cursor_trail 3
+# cursor_trail 0
 
 #: Set this to a value larger than zero to enable a "cursor trail"
 #: animation. This is an animation that shows a "trail" following the
@@ -1322,7 +1322,7 @@ hide_window_decorations yes
 
 #: The foreground and background colors.
 
-background_opacity 0.8
+# background_opacity 1.0
 
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if
@@ -1353,7 +1353,7 @@ background_opacity 0.8
 #: will only work if dynamic_background_opacity was enabled in the
 #: original config.
 
-background_blur 80
+# background_blur 0
 
 #: Set to a positive value to enable background blur (blurring of the
 #: visuals behind a transparent window) on platforms that support it.
@@ -2788,11 +2788,3 @@ background_blur 80
 #: }}}
 
 #: }}}
-
-
-# BEGIN_KITTY_FONTS
-font_family      family="Maple Mono NF"
-bold_font        auto
-italic_font      auto
-bold_italic_font auto
-# END_KITTY_FONTS
