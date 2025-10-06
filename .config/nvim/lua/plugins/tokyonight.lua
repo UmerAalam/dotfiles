@@ -1,12 +1,68 @@
-return {
-  {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
-    config = function(_, opts)
-      require("tokyonight").setup(opts)
-      vim.cmd.colorscheme("tokyonight-storm")
-    end,
-  },
-}
+-- return {
+--   {
+--     "folke/tokyonight.nvim",
+--     lazy = false,
+--     priority = 1000,
+--     opts = {
+--       style = "storm", -- or "night", doesn't matter much — we'll override colors anyway
+--       transparent = false,
+--       terminal_colors = true,
+--       styles = {
+--         comments = { italic = false },
+--         keywords = { italic = false },
+--         functions = {},
+--         variables = {},
+--       },
+--       on_colors = function(colors)
+--         colors.bg = "#0a0a0a" -- Dark Batman background
+--         colors.fg = "#d0d0d0" -- Light gray text
+--         colors.comment = "#777777" -- Dim gray comments
+--         colors.yellow = "#f5e663" -- Bright yellow (like your tmux bar)
+--         colors.orange = "#f5c063"
+--         colors.hint = "#f5e663"
+--         colors.git = {
+--           change = "#f5e663",
+--           add = "#a5e663",
+--           delete = "#ff5f5f",
+--         }
+--       end,
+--       on_highlights = function(hl, c)
+--         hl.Normal = { fg = c.fg, bg = "#0a0a0a" }
+--         hl.NormalNC = { fg = c.fg, bg = "#0a0a0a" }
+--         hl.LineNr = { fg = "#444444" }
+--         hl.CursorLineNr = { fg = c.yellow, bold = true }
+--         hl.StatusLine = { fg = "#0a0a0a", bg = c.yellow, bold = true }
+--         hl.Visual = { bg = "#333333" }
+--         hl.CursorLine = { bg = "#111111" }
+--
+--         -- Completion popup
+--         hl.Pmenu = { bg = "#1a1a1a", fg = c.fg }
+--         hl.PmenuSel = { bg = c.yellow, fg = "#0a0a0a", bold = true }
+--
+--         -- Diagnostics
+--         hl.DiagnosticVirtualTextError = { bg = "#1a1a1a", fg = "#ff5f5f" }
+--         hl.DiagnosticVirtualTextWarn = { bg = "#1a1a1a", fg = c.yellow }
+--         hl.DiagnosticVirtualTextHint = { bg = "#1a1a1a", fg = "#888888" }
+--
+--         -- Tailwind class fix (if you're using tailwind-colorizer-cmp or similar)
+--         hl["@class.name.tailwind"] = { fg = c.yellow }
+--       end,
+--     },
+--     config = function(_, opts)
+--       require("tokyonight").setup(opts)
+--       vim.cmd.colorscheme("tokyonight")
+--     end,
+--   },
+-- }
+-- return {
+--   {
+--     "folke/tokyonight.nvim",
+--     lazy = false,
+--     priority = 1000,
+--     opts = {},
+--     config = function(_, opts)
+--       require("tokyonight").setup(opts)
+--       vim.cmd.colorscheme("tokyonight-storm")
+--     end,
+--   },
+-- }
