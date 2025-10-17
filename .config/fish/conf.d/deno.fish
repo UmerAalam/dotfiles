@@ -1,0 +1,1 @@
+source "/home/umeraalam/.deno/env.fish"
